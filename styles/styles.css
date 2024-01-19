@@ -1,0 +1,644 @@
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+main {
+	display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+a {
+	background-color: transparent;
+	color: inherit;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+b,
+strong {
+	font-weight: bolder;
+}
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+img {
+	border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+progress {
+	vertical-align: baseline;
+}
+textarea {
+	overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+details {
+	display: block;
+}
+summary {
+	display: list-item;
+}
+template {
+	display: none;
+}
+[hidden] {
+	display: none;
+}
+body {
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+@font-face {
+	font-family: "Banda";
+	src: url("https://d10hbub4nkludc.cloudfront.net/fonts/regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+#openrentBySs {
+	width: 100vw;
+	min-width: 1100px;
+}
+.top {
+	position: relative;
+	color: #fff;
+	background: #21384d;
+	background: linear-gradient(132deg, rgba(33, 56, 77, 0.9) 0%, rgba(43, 94, 136, 0.9) 100%);
+	box-shadow: 0 10px 25px 10px rgba(158, 158, 158, 0.1);
+}
+.top:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/houses.png") no-repeat bottom center / cover fixed;
+	filter: grayscale(100%) brightness(70%);
+	z-index: -1;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	align-items: center;
+}
+header .logo {
+	width: 180px;
+	height: auto;
+	display: block;
+	margin: 0 50px;
+}
+nav {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 0 50px;
+}
+nav .menu-item {
+	margin: 0 15px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 30px;
+	color: #efefef;
+}
+nav .menu-item:hover:not(.menu-focus, .menu-button) {
+	color: #fff;
+}
+nav .menu-item.menu-focus {
+	background-color: #468cc8;
+	padding: 6px 20px;
+	border-radius: 8px;
+	color: #fff;
+}
+nav .menu-item.menu-focus:hover {
+	background-color: #397eb5;
+}
+nav .menu-item.menu-button {
+	background-color: #5cb85c;
+	padding: 6px 20px;
+	border-radius: 8px;
+	color: #fff;
+}
+nav .menu-item.menu-button:hover {
+	background-color: #449d44;
+}
+.openrent-banner {
+	padding: 100px 50px 140px;
+	margin: 0 auto;
+	max-width: 960px;
+	text-align: center;
+}
+.openrent-banner h1 {
+	font-family: "Banda";
+	font-size: 36px;
+	font-weight: 500;
+}
+.openrent-banner p {
+	font-family: "Banda";
+	font-size: 22px;
+	margin: 15px 0 25px;
+}
+.openrent-search {
+	background-color: rgba(255, 255, 255, 0.3);
+	height: 50px;
+	border-radius: 25px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+}
+.openrent-search .pin {
+	width: 60px;
+	height: 50px;
+	background-color: #397eb5;
+	position: relative;
+	cursor: pointer;
+	border-radius: 25px 0 0 25px;
+}
+.openrent-search .pin-icon {
+	position: absolute;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	width: 6px;
+	height: 6px;
+	left: 0;
+	right: 0;
+	top: 10px;
+	margin: auto;
+	scale: 0.8;
+}
+.openrent-search .pin-icon:after {
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	outline: 3px solid #397eb5;
+	top: 50%;
+	left: 50%;
+	margin-left: -3px;
+	margin-top: -3px;
+	background-color: #fff;
+}
+.openrent-search .pin-icon:before {
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 0px;
+	bottom: -26px;
+	left: -5px;
+	border: 8px solid transparent;
+	border-top: 17px solid #fff;
+}
+.openrent-search .lense {
+	position: relative;
+	width: 70px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 0 25px 25px 0;
+	background-color: #397eb5;
+}
+.openrent-search .lense:before {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 12px;
+	top: 14px;
+	left: 21px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+}
+.openrent-search .lense:after {
+	position: absolute;
+	content: "";
+	left: 32px;
+	top: 29px;
+	width: 7px;
+	transform: rotate(45deg);
+	border: 2px solid #fff;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.openrent-input {
+	height: 50px;
+	width: calc(100% - 150px);
+	padding: 0 10px;
+	background: transparent;
+	border: 0 none;
+	outline: 0 none;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+}
+.openrent-input::placeholder {
+	color: #bfbfbf;
+	opacity: 1;
+}
+.main {
+	position: relative;
+	width: 100vw;
+	display: block;
+}
+.main:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100px;
+	background: url("../images/houses.png") no-repeat bottom center / cover fixed;
+	filter: brightness(50%);
+	z-index: -1;
+}
+.main .content h2 {
+	font-size: 40px;
+	line-height: 100px;
+	height: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.content-list {
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 50px 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.content-item {
+	flex: 0 0 27%;
+	max-width: 300px;
+	margin: 15px;
+	height: auto;
+	border: 1px solid #21384d;
+	position: relative;
+}
+.content-item .img {
+	width: 100%;
+	height: 150px;
+}
+.content-item .img {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+.content-item .img img {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.content-item-tag {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #468cc8;
+	color: #fff;
+	font-weight: 500;
+	padding: 4px 10px;
+	text-transform: uppercase;
+	pointer-events: none;
+	font-size: 12px;
+}
+.content-item-name {
+	font-size: 18px;
+	font-weight: 600;
+	color: #397eb5;
+	margin: 10px;
+}
+.content-item-price {
+	position: absolute;
+	top: 195px;
+	left: 20px;
+	background-color: #fff;
+	color: #468cc8;
+	font-weight: 500;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+.content-item-address {
+	position: relative;
+	display: flex;
+	margin: 10px;
+}
+.content-item-address img,
+.content-item-details img {
+	height: 20px;
+	width: auto;
+	margin-right: 10px;
+}
+.content-item-details {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+.content-item-details > div {
+	display: flex;
+	align-items: center;
+}
+.content-item-address p {
+	color: #545454;
+}
+.content-item-info {
+	margin: 0 14px 10px;
+	display: inline;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+}
+.content-item-info p {
+	font-weight: 500;
+	color: #545454;
+	line-height: 1.3em;
+}
+.content-item:hover {
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.content-item:hover .content-item-tag {
+	background-color: #212121;
+}
+.content-item:hover .content-item-price {
+	background-color: #468cc8;
+	color: #fff;
+}
+.tenants {
+	padding: 80px 0;
+	background-color: #397eb5;
+	color: #fff;
+}
+.tenants-head h3 {
+	font-family: "Banda";
+	font-weight: 600;
+	font-size: 46px;
+	margin-bottom: 15px;
+}
+.tenants-head {
+	max-width: 1100px;
+	margin: auto;
+	text-align: center;
+}
+.tenants-info {
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.tenants-benefits {
+	font-size: 22px;
+	display: block;
+	margin: 30px 0 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.tenants-benefits span {
+	background: url(../images/checkshield.svg) no-repeat left center;
+	background-size: 35px 35px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 45px;
+	font-weight: 500;
+}
+.video {
+	position: relative;
+	width: 50%;
+	padding-bottom: 28.125%; /* 16:9 aspect ratio (height/width) */
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.tenants-container {
+	width: 45%;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+.tenants-container p {
+	line-height: 1.4em;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.tenants-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.tenants-link a {
+	cursor: pointer;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #fff;
+	font-weight: 500;
+}
+.tenants-link button {
+	outline: 0 none;
+	border: 0 none;
+	cursor: pointer;
+	color: #fff;
+	background-color: #5cb85c;
+	padding: 8px 30px;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 36px;
+	margin-right: 15px;
+}
+.tenants-link button:hover {
+	background-color: #449d44;
+}
+.openrent-ads {
+	background-color: #eaeaea;
+	padding: 80px 0;
+	text-align: center;
+}
+.openrent-ads > div {
+	max-width: 1100px;
+	margin: auto;
+}
+.openrent-ads h3 {
+	font-family: "Banda";
+	line-height: 40px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #545454;
+	margin: 0 auto 80px;
+	max-width: 600px;
+}
+.openrent-ads > div > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.openrent-ads > div > div > img {
+	width: 150px;
+	height: auto;
+	display: block;
+}
+footer {
+	padding: 80px 0;
+	background-color: #212121;
+	color: #fff;
+}
+.footer-wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1500px;
+	padding: 0 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-brand {
+	align-self: flex-end;
+}
+.adr {
+	margin: 20px 0;
+	line-height: 1.5em;
+}
+.extra-menu ul,
+.bottom-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 200px;
+}
+.bottom-menu ul li,
+.extra-menu ul li {
+	display: block;
+	border-bottom: 1px solid #323232;
+	padding: 10px;
+}
+.bottom-menu ul li:hover,
+.extra-menu ul li:hover {
+	background-color: #232323;
+	border-bottom-color: #454545;
+}
+.bottom-menu ul li a,
+.extra-menu ul li a {
+	text-decoration: none;
+	display: block;
+}
